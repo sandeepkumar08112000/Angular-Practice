@@ -1,0 +1,14 @@
+<h1>Data-Binding works!</h1>
+<h3>{{title}}</h3>
+<br>
+<input class="form-control" type="text" name="Name" value="{{name}}" disabled="{{disable}}">
+<br><br>
+<input type="text" name="Name" [value]="name" [disabled]="disable">
+<br><br>
+
+<!-- Counter Example -->
+ <button type="add" (click)="counter('add')">Plus</button>
+ <br><br>
+ <h4>Count : {{count}}</h4>
+ <br><br>
+ <button type="remove" (click)="counter('remove')">Minus</button>
